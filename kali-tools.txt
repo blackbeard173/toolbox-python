@@ -1,0 +1,10 @@
+aircrack-ng
+burpsuite
+crackmapexec
+hydra
+john
+metasploit-framework
+nmap
+responder
+wireshark
+sqlmap

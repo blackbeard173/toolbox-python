@@ -13,5 +13,5 @@ setup(
     # [console_scripts]
     # toolbox=main:app
     # '''
-    entry_points={'console_scripts': ['toolbox=main:app']}
+    entry_points={'console_scripts': ['toolbox=main:toolbox']}
 )
