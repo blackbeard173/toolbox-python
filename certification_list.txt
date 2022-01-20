@@ -1,0 +1,19 @@
+Certification   Description
+
+CEH - Certified Ethical Hacker	
+A Certified Ethical Hacker is a skilled professional who understands and knows how to look for weaknesses and vulnerabilities in target systems and uses the same knowledge and tools as a malicious hacker, but in a lawful and legitimate manner to assess the security posture of a target system(s). The CEH credential certifies individuals in the specific network security discipline of Ethical Hacking from a vendor-neutral perspective.
+
+CISSP - CERTIFIED INFORMATION SYSTEMS SECURITY PROFESSIONAL	
+The Certified Information Systems Security Professional (CISSP) is an information security certification for security analysts.
+
+CompTIA Security+	
+CompTIA Security+ is a global certification that validates the baseline skills you need to perform core security functions and pursue an IT security career.
+
+GPEN - GIAC Penetration Tester	
+The GPEN certification is for security personnel whose job duties involve assessing target networks and systems to find security vulnerabilities. Certification objectives include penetration-testing methodologies, the legal issues surrounding penetration testing and how to properly conduct a penetration test as well as best practice technical and non-technical techniques specific to conduct a penetration test.
+
+PWK - Penetration Testing Training with Kali Linux
+Penetration Testing with Kali (PWK) is a self-paced, online course that introduces students to the latest ethical hacking tools and techniques.
+
+OSCP - Offensive Security Certified Professional	
+The Offensive Security Certified Professional (OSCP) is the companion certification for our Penetration Testing with Kali Linux training course and is the world’s first completely hands-on offensive information security certification. The OSCP challenges the students to prove they have a clear and practical understanding of the penetration testing process and life-cycle through an arduous twenty-four (24) hour certification exam.

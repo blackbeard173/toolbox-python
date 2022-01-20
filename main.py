@@ -18,8 +18,7 @@ def toolbox():
         # system('clear')
         kali_tools()
         # subprocess.run(["/path/to/your/shell/script", "arguments"], shell=True)
-        subprocess.run(["./test.sh"])
-
+        # subprocess.run(["./test.sh"])
     elif(selected_option == '2'):
         # system('clear')
         qol()
@@ -27,23 +26,45 @@ def toolbox():
         if(selected_option_qol == '1'):
             subprocess.run(["./install_neofetch.sh"])
             typer.echo(f"Now you can run 'neofetch'")
-        if(selected_option_qol == '2'):
+        elif(selected_option_qol == '2'):
             subprocess.run(["./install_starship.sh"])
-            typer.echo(f"Now you can run 'neofetch'")
+            typer.echo(f"Now you can run restart terminal")
+        elif(selected_option_qol == '3'):
+            subprocess.run(["./install_bat.sh"])
+            typer.echo(f"Now you can run 'bat'")
+        elif(selected_option_qol == '4'):
+            subprocess.run(["./install_htop.sh"])
+            typer.echo(f"Now you can run 'htop'")
+    elif(selected_option == '3'):
+        typer.echo(f"run ./search.sh")
+    elif(selected_option == '4'):
+        typer.echo(f"run ./cht.sh 'search term'")
+    elif(selected_option == '5'):
+        certification_list()
 
 
 def qol():
     typer.echo(f"1: neofetch")
     typer.echo(f"2: starship")
+    typer.echo(f"3: bat")
+    typer.echo(f"4: htop")
 
 
 def menu():
     typer.echo(f"1> Kali Top 10 Tools")
     typer.echo(f"2> Qualtity of Life Tools")
+    typer.echo(f"3> Googler")
+    typer.echo(f"4> CheatSheet")
+    typer.echo(f"5> Certifications")
 
 
 def kali_tools():
-    with open('kali-tools.txt', 'r') as f:
+    with open('kali-tools-top10.txt', 'r') as f:
+        print(f.read())
+
+
+def certification_list():
+    with open('certification_list.txt', 'r') as f:
         print(f.read())
 
 
