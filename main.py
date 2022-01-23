@@ -14,13 +14,20 @@ def toolbox():
         "Welcome to [bold magenta]Toolbox![/bold magenta]", style="red"))
     menu()
     selected_option = typer.prompt("Select a option from menu")
-    if (selected_option == '1'):
+    if(selected_option == '1'):
         # system('clear')
-        kali_tools()
         # subprocess.run(["/path/to/your/shell/script", "arguments"], shell=True)
         # subprocess.run(["./test.sh"])
+        typer.echo(f"run ./search.sh [search term]")
     elif(selected_option == '2'):
-        # system('clear')
+        typer.echo(f"run ./cht.sh [search term]")
+    elif(selected_option == '3'):
+        typer.echo(
+            f"run python keylogger.py; check logs.json for keystrokes saved")
+    elif (selected_option == '4'):
+        kali_tools()
+
+    elif(selected_option == '2'):
         qol()
         selected_option_qol = typer.prompt("Select a option from menu")
         if(selected_option_qol == '1'):
@@ -35,27 +42,24 @@ def toolbox():
         elif(selected_option_qol == '4'):
             subprocess.run(["./install_htop.sh"])
             typer.echo(f"Now you can run 'htop'")
-    elif(selected_option == '3'):
-        typer.echo(f"run ./search.sh")
-    elif(selected_option == '4'):
-        typer.echo(f"run ./cht.sh 'search term'")
     elif(selected_option == '5'):
         certification_list()
 
 
 def qol():
-    typer.echo(f"1: neofetch")
-    typer.echo(f"2: starship")
-    typer.echo(f"3: bat")
-    typer.echo(f"4: htop")
+    typer.echo(f"1: htop")
+    typer.echo(f"2: neofetch")
+    typer.echo(f"3: starship")
+    typer.echo(f"4: bat")
 
 
 def menu():
-    typer.echo(f"1> Kali Top 10 Tools")
-    typer.echo(f"2> Qualtity of Life Tools")
-    typer.echo(f"3> Googler")
-    typer.echo(f"4> CheatSheet")
-    typer.echo(f"5> Certifications")
+    typer.echo(f"1> Googler")
+    typer.echo(f"2> CheatSheet")
+    typer.echo(f"3> Keylogger")
+    typer.echo(f"4> Kali Top 10 Tools")
+    typer.echo(f"5> QoL Tools")
+    typer.echo(f"6> Certifications")
 
 
 def kali_tools():
